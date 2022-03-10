@@ -1,23 +1,16 @@
 /* DO NOT LINK API KEY!!!!!!!!!!
 
-
 so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
 
-Where i left off -> I have all the minimum requirements except:
--the desktop version. 
--MAKE SURE I MAKE PHONE NUMBER IS NOT CLICKABLE ON DESKTOP/TABLET 
--fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
--style nav bar
--MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
+-make the grid for menu/contact for 2/tablet and 3/desktop
+--fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
 
+If I can
+-style nav bar and MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
 -make the pictures on the index page be horizontal again (it's just in a list right now)
--make the column for the menu and about us to go to 2 column grid on tablet and 3 on desktop
 -make the nav bar appear in the top corner on desktop like standard websites have
 
 -use float to wrap text around images like in word.
-
-
-
 */
 * {
   margin: 0;
@@ -79,15 +72,7 @@ main img {
           align-items: center;
 }
 
-main #menuItems {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
 main nav {
-  margin-left: 25%;
   font-size: 1.5rem;
   position: fixed;
   bottom: 5%;

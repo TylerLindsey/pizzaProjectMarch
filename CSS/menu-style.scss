@@ -1,30 +1,56 @@
 @import 'style.scss';
 
-#menuItems {
+.menuItems {
   display: grid;
   grid-template-columns: 1fr;
 }
 @import 'min600';
 @media screen and (min-width:600px) {
 
+  /*change the colors or delete all together. just a place holder for now*/
     main {
-      .menuItems {        
-        height: 45vh;
-        margin: 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: repeat(auto-fll, minmax(250px,1fr));
+      .pizza {
+        background: $blue-theme;
+      }
+      .lasagna {
+        background: $red-theme;
+      }
+      .spaghetti {
+        background: $blue-theme;
+      }
+      .wings {
+         background: $red-theme;
+      }
+      .non-alcoholic {
+        background: $blue-theme;
+      }
+      .beer {
+         background: $red-theme;
+      }
+      .wine {
+        background: $blue-theme;
+      }
+      .desert {
+        background: $red-theme;
       }
       
-      .menuItems {
-        font-size: 5rem;
+      #menuItems {
+        // margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(40vw,1fr));
+      }
+      
+      #menuItems {
+        font-size: 1em;
         text-align: center;
-        padding: 4rem;
+        // padding: 4rem;
         grid-gap: 1vw;
       }
       img {
-        height: 10vh;
+        width: 60%;
+        float: left;
       }
     }
   }
