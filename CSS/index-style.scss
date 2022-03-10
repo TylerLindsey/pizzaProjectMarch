@@ -1,7 +1,17 @@
 @import 'style.scss';
 
-@import 'style'; 
+// @import 'style'; delete this? 
 @media screen and (min-width:600px) {
+  header {
+    a:link {
+      display: none;
+    }
+    p{
+      display: inline;
+      color: $white-theme;
+    }
+  }
+  
   main {
     img {
       height: 40vh;

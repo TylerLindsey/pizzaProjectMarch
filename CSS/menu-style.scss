@@ -12,6 +12,16 @@
     //   }
     // }  tried this to make the phone number not clickable on tablet/desktop
 
+    header {
+      a:link {
+        display: none;
+      }
+      p{
+        display: inline;
+        color: $white-theme;
+      }
+    }
+
     main {
       .menuItems {        
         height: 45vh;

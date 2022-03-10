@@ -3,43 +3,20 @@
 
 so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
 
-where i left off
--I started the 40 year animation and have it commented out in the 40year.scss and also in index.html I commented out the sun picture and created the body for the animation. I just commented it out for now
--first thing i should do is back up a copy to github of what i have, go from there, the things i have listed below can basically be done in order/chronologically.
-
-all i have left for mobile is to:
--fix git
--I have to make the phone number not clickable on 600<
-
-
-review
--positioning w4a to fix the problems with the nav bar and phon number at the top of the screen. I may also want to make the font smaller?
--change absolute units to relative so that it scales to device size. (except the really small stuff) and use % for children/parents
-
-MAKE SURE I MAKE IT NOT CLICKABLE ON DESKTOP/TABLET 
-MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
--use float to wrap text around images like in word.
--fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed.
-
-problems i have to fix
--my paragraphs are going out on the mobile still, so i need to fix that
-- i have to center the nav bar. its not a problem on mobile really but is off to the left on tablet
-  - i have to do the same thing to the phone number at the top of the page
-- on desktop (1024x768) I want to change the entire layout to not be a list, but instead be a grid 
-
-if i can/have time
--give the number and nav a relative position so that i can add space to any of the 4 sides
-use an absolute position for the animations over the images (can apply to food and to home page gallery) -> coud be an alternative to the "hidden menu"
--add the "hidden menu" and navigation for things like specific type of pizza -> maybe leave until I complete everything and either add that as a cool feature, or back up plan is to just make a cell for every item (that's not as cool, but time management) 
-    could make it so that the "hidden menu" just pops up over what is already working and displays the different types of food? like pizza types and beer brands? 
-        WHAT DOES 24 ITEMS ACTUALLY MEAN FOR THE ASSIGNMENTS REQUIREMENTS??????
+Where i left off -> I have all the minimum requirements except:
+-the desktop version. 
+-MAKE SURE I MAKE PHONE NUMBER IS NOT CLICKABLE ON DESKTOP/TABLET 
+-MAKE 1 SASS FILE FOR ALL MENU ITEMS THAT CAN BE IPORTED ACCROSS THEM ALL
+-fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
 -style nav bar
--make 40 year animation https://www.codingflicks.com/2020/11/pure-css-number-counter.html teaches how to do a digit counter. 
--https://www.proglobalbusinesssolutions.com/css-hover-effects/ for ideas to implement
--popup that looks like an incoming facetime is effective. I saw this at https://www.lifehack.org/articles/productivity/types-procrastination-and-how-you-can-fix-them.html about halfway down the page it just pops out
+-MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
 
-formula to make users know there is more (especally horizontal scrolling)
-so set all of the widths(or heights) of a particular section so that the sum is between 80-90% of the screen, then there is always 10-20% of the next section on the screen, so the user knows it is there.
+-make the pictures on the index page be horizontal again (it's just in a list right now)
+-make the column for the menu and about us to go to 2 column grid on tablet and 3 on desktop
+-make the nav bar appear in the top corner on desktop like standard websites have
+
+-use float to wrap text around images like in word.
+
 
 
 */
@@ -68,6 +45,10 @@ header a:active {
 
 header img {
   width: 75px;
+}
+
+header p {
+  display: none;
 }
 
 main {
@@ -136,7 +117,16 @@ footer img {
   // div.scrollmenu a:hover {
     background-color: $gray-theme2;
   } */
-main iframe {
-  width: 92vw;
+@media screen and (min-width: 600px) {
+  header a:link {
+    display: none;
+  }
+  header p {
+    display: inline;
+    color: white;
+  }
+  main iframe {
+    width: 92vw;
+  }
 }
 /*# sourceMappingURL=contact-us-style.css.map */
