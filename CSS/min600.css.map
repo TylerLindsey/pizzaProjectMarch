@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "index-style.scss"
+        "min600.scss"
     ],
     "names": [],
-    "file": "index-style.css"
+    "file": "min600.css"
 }

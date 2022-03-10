@@ -1,0 +1,113 @@
+/* DO NOT LINK API KEY!!!!!!!!!!
+
+
+so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+
+Where i left off -> I have all the minimum requirements except:
+-the desktop version. 
+-MAKE SURE I MAKE PHONE NUMBER IS NOT CLICKABLE ON DESKTOP/TABLET 
+-make the pictures on the index page be horizontal again (it's just in a list right now)
+-MAKE 1 SASS FILE FOR ALL MENU ITEMS THAT CAN BE IPORTED ACCROSS THEM ALL
+-make the column for the menu and about us to go to 2 column grid on tablet and 3 on desktop
+-fix git
+-use float to wrap text around images like in word.
+-fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
+-style nav bar
+-MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
+-make the nav bar appear in the top corner on desktop like standard websites have
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5c5757;
+}
+
+header {
+  margin-left: 25%;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+header a:link {
+  color: white;
+}
+
+header a:active {
+  color: hotpink;
+}
+
+header img {
+  width: 75px;
+}
+
+main {
+  color: #e69a0f;
+  background-color: white;
+  font-size: large;
+  font: bold;
+  text-align: center;
+  padding: 1rem;
+  grid-gap: 1vw;
+  /*change up the code below to make it my own. all div.scrollmenu*/
+  /*because they are all in the animated id does that mean 
+i think i need to make a class of animation and a class of images and they are the start and end point of he animation.
+ perhaps i could put this animated section in it's own page and import it like i will with colours*/
+}
+
+main .title {
+  font: 2em sans-serif;
+}
+
+main .subtitle {
+  font: 1.5em sans-serif;
+}
+
+main img {
+  height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #menuItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main nav {
+  margin-left: 25%;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 5%;
+  background-color: #9b9797;
+}
+
+main nav a:link {
+  color: maroon;
+}
+
+main nav a:active {
+  color: hotpink;
+}
+
+main nav a:visited {
+  color: rbg(222, 70, 7);
+  font-weight: bold;
+}
+
+footer img {
+  display: inline-block;
+  height: 50px;
+}
+
+/* add that to above 1100*
+  // div.scrollmenu a:hover {
+    background-color: $gray-theme2;
+  } */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import 'style.scss';
+
+#menuItems {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:600px) {
+    // header {
+    //   a {
+    //     display: none;
+    //   }
+    // }  tried this to make the phone number not clickable on tablet/desktop
+
+    main {
+      .menuItems {        
+        height: 45vh;
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fll, minmax(250px,1fr));
+      }
+      
+      .menuItems {
+        font-size: 5rem;
+        text-align: center;
+        padding: 4rem;
+        grid-gap: 1vw;
+      }
+      img {
+        height: 10vh;
+      }
+    }
+  }

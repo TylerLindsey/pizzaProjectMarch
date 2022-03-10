@@ -1,8 +1,10 @@
+@import 'style.scss';
+
 @import 'style'; 
 @media screen and (min-width:600px) {
   main {
     img {
-      height: 60vh;
+      height: 40vh;
     }
     iframe{
       height: 60vh;
@@ -10,4 +12,7 @@
     }
   }
 }
+
+
+
 

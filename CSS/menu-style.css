@@ -1,17 +1,16 @@
 /* DO NOT LINK API KEY!!!!!!!!!!
 
+
+so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+
 where i left off
 -I started the 40 year animation and have it commented out in the 40year.scss and also in index.html I commented out the sun picture and created the body for the animation. I just commented it out for now
 -first thing i should do is back up a copy to github of what i have, go from there, the things i have listed below can basically be done in order/chronologically.
 
 all i have left for mobile is to:
 -fix git
--organize files in explorer by sass, html 
--WHAT DOES 24 ITEMS ACTUALLY MEAN FOR THE ASSIGNMENTS REQUIREMENTS?????? See below in if i have time section
--is there supposed to be the <and> on line 2 of min600?
--I designed my tablet version by changing the view to only 390 tall, to simulate a phone going into tablet mode. Is that always going to work for design? or would it be better to keep it full height? 
--did i do the twitter card correct?, and on that note, how can i do them better for seo?
--why is my 40 year animation not working? I can copy paste the code out of the site in and it "works" (Not styled right but it works). But right now I keep getting errors, actually even when i copy paste certain elemtents in at a time
+-I have to make the phone number not clickable on 600<
+
 
 review
 -positioning w4a to fix the problems with the nav bar and phon number at the top of the screen. I may also want to make the font smaller?
@@ -20,6 +19,7 @@ review
 MAKE SURE I MAKE IT NOT CLICKABLE ON DESKTOP/TABLET 
 MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
 -use float to wrap text around images like in word.
+-fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed.
 
 problems i have to fix
 -my paragraphs are going out on the mobile still, so i need to fix that
@@ -48,108 +48,122 @@ so set all of the widths(or heights) of a particular section so that the sum is 
   padding: 0;
 }
 
-// @import '_animation';
-@import 'color-theme'; 
-
 body {
-  background-color:$gray-theme;
+  background-color: #5c5757;
 }
 
 header {
   margin-left: 25%;
   display: inline-block;
   font-size: 3rem;
-  a:link {
-    color: $white-theme;
-  }
-  a:active {
-    color: $pink-theme;
-  } 
-  img {
-    width: 75px;
-  }
 }
 
-main { 
-  .title {
-    font: 2em sans-serif;
-  } 
-  .subtitle {
-    font: 1.5em sans-serif;
-  } 
-  img {
-    // width: 50vw;
-    height: 20vh;
-    align-items: center;
-  }
-  color: $orange-theme2;
+header a:link {
+  color: white;
+}
+
+header a:active {
+  color: hotpink;
+}
+
+header img {
+  width: 75px;
+}
+
+main {
+  color: #e69a0f;
+  background-color: white;
   font-size: large;
   font: bold;
   text-align: center;
   padding: 1rem;
   grid-gap: 1vw;
   /*change up the code below to make it my own. all div.scrollmenu*/
-  div.scrollmenu {
-    background-color: $white-theme;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
-    display: block; /*was inline-block, I think it was for sideways scroll*/
-    color: $orange-theme;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-
-  nav {
-    
-    font-size: 1.5rem;
-    position: fixed;
-    margin: 20px;
-    bottom: 5%;
-    background-color: $gray-theme2;
-    a:link {
-      color: $dark-red-theme;
-    }
-    a:active {
-      color: $pink-theme;
-    }
-    a:visited {
-      color: $orange-theme;
-      font-weight: bold;
-    } 
-  }
-
- /*because they are all in the animated id does that mean 
+  /*because they are all in the animated id does that mean 
 i think i need to make a class of animation and a class of images and they are the start and end point of he animation.
  perhaps i could put this animated section in it's own page and import it like i will with colours*/
-  
-
-// nav.fixed {
-//   position: fixed;
-//   bottom: 0;
-//   right: 0;
-//   width: 300px;
-//   border: 3px solid #73AD21;
-// }
-
 }
 
-footer {
-  img {
+main .title {
+  font: 2em sans-serif;
+}
+
+main .subtitle {
+  font: 1.5em sans-serif;
+}
+
+main img {
+  height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #menuItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main nav {
+  margin-left: 25%;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 5%;
+  background-color: #9b9797;
+}
+
+main nav a:link {
+  color: maroon;
+}
+
+main nav a:active {
+  color: hotpink;
+}
+
+main nav a:visited {
+  color: rbg(222, 70, 7);
+  font-weight: bold;
+}
+
+footer img {
   display: inline-block;
   height: 50px;
-  }
 }
-
-
-
 
 /* add that to above 1100*
   // div.scrollmenu a:hover {
     background-color: $gray-theme2;
   } */
+#menuItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
 
-  
+@media screen and (min-width: 600px) {
+  main .menuItems {
+    height: 45vh;
+    margin: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fll];
+        grid-template-columns: repeat(auto-fll, minmax(250px, 1fr));
+  }
+  main .menuItems {
+    font-size: 5rem;
+    text-align: center;
+    padding: 4rem;
+    grid-gap: 1vw;
+  }
+  main img {
+    height: 10vh;
+  }
+}
+/*# sourceMappingURL=menu-style.css.map */
