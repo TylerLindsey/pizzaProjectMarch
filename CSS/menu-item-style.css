@@ -24,27 +24,6 @@ Where i left off -> I have all the minimum requirements except:
   padding: 0;
 }
 
-nav {
-  margin-left: 25%;
-  font-size: 1.5rem;
-  position: fixed;
-  bottom: 5%;
-  background-color: #9b9797;
-}
-
-nav a:link {
-  color: maroon;
-}
-
-nav a:active {
-  color: hotpink;
-}
-
-nav a:visited {
-  color: rbg(222, 70, 7);
-  font-weight: bold;
-}
-
 body {
   background-color: #5c5757;
 }
@@ -107,6 +86,27 @@ main #menuItems {
       grid-template-columns: 1fr;
 }
 
+main nav {
+  margin-left: 25%;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 5%;
+  background-color: #9b9797;
+}
+
+main nav a:link {
+  color: maroon;
+}
+
+main nav a:active {
+  color: hotpink;
+}
+
+main nav a:visited {
+  color: rbg(222, 70, 7);
+  font-weight: bold;
+}
+
 footer img {
   display: inline-block;
   height: 50px;
@@ -116,4 +116,51 @@ footer img {
   // div.scrollmenu a:hover {
     background-color: $gray-theme2;
   } */
-/*# sourceMappingURL=style.css.map */
+#menuItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  header a:link {
+    display: none;
+  }
+  header p {
+    display: inline;
+    color: white;
+  }
+  main img {
+    height: 40vh;
+  }
+  main iframe {
+    height: 60vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main .menuItems {
+    height: 45vh;
+    margin: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fll];
+        grid-template-columns: repeat(auto-fll, minmax(250px, 1fr));
+  }
+  main .menuItems {
+    font-size: 5rem;
+    text-align: center;
+    padding: 4rem;
+    grid-gap: 1vw;
+  }
+  main img {
+    height: 10vh;
+  }
+}
+/*# sourceMappingURL=menu-item-style.css.map */

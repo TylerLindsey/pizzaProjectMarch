@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=min600.css.map */
+@media screen and (min-width: 600px) {
+  header a:link {
+    display: none;
+  }
+  header p {
+    display: inline;
+    color: white;
+  }
+  main img {
+    height: 40vh;
+  }
+  main iframe {
+    height: 60vh;
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=min600.css.map */

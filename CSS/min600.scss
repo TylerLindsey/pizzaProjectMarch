@@ -10,4 +10,26 @@
 //     }
 //   }
 // }
+@import 'color-theme';
+@media screen and (min-width:600px) {
+  header {
+    a:link {
+      display: none;
+    }
+    p{
+      display: inline;
+      color: $white-theme;
+    }
+  }
+  
+  main {
+    img {
+      height: 40vh;
+    }
+    iframe{
+      height: 60vh;
+      width: 80vw;
+    }
+  }
+}
 

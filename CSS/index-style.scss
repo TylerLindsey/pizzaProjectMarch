@@ -1,27 +1,27 @@
 @import 'style.scss';
-
+@import 'min600';
 // @import 'style'; delete this? 
-@media screen and (min-width:600px) {
-  header {
-    a:link {
-      display: none;
-    }
-    p{
-      display: inline;
-      color: $white-theme;
-    }
-  }
+// @media screen and (min-width:600px) {
+//   header {
+//     a:link {
+//       display: none;
+//     }
+//     p{
+//       display: inline;
+//       color: $white-theme;
+//     }
+//   }
   
-  main {
-    img {
-      height: 40vh;
-    }
-    iframe{
-      height: 60vh;
-      width: 80vw;
-    }
-  }
-}
+//   main {
+//     img {
+//       height: 40vh;
+//     }
+//     iframe{
+//       height: 60vh;
+//       width: 80vw;
+//     }
+//   }
+// }
 
 
 

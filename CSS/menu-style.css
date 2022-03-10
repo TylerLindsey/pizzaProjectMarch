@@ -132,6 +132,16 @@ footer img {
     display: inline;
     color: white;
   }
+  main img {
+    height: 40vh;
+  }
+  main iframe {
+    height: 60vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
   main .menuItems {
     height: 45vh;
     margin: 2rem;
