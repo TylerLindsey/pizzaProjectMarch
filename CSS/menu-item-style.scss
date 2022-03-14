@@ -24,7 +24,135 @@
         grid-gap: 1vw;
       }
       img {
-        height: 10vh;
+        width: 350px;
+      }
+      .grid-container{
+        display: grid;
+        font-size: 2rem;
+        .reception {
+          background-color: $gray-theme3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        } 
+
+        .hawaiian-pizza {
+          background-color: $gray-theme4;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: right;
+          }
+          a+p{
+            float: left;
+          }
+        }
+  
+        .Pepperoni-pizza {
+          background-color: $gray-theme3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+  
+        .cheese-pizza {
+          background-color: $gray-theme4;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: right;
+          }
+          a+p{
+            float: left;
+          }
+        }
+  
+        .greek-pizza {
+          background-color: $gray-theme3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+
+        .ham-and-mushroom-pizza {
+          background-color: $gray-theme4;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+
+        .bbq-pulled-pork-pizza {
+          background-color: $gray-theme3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+
+        .california-pizza {
+          background-color: $gray-theme4;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+
+        .chicago-deep-dish-pizza {
+          background-color: $gray-theme3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: minmax(70px, auto);
+          img {
+            float: left;
+          }
+          a+p{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width:1000px) {
+    main{
+      img{
+        width: 500px;
       }
     }
   }

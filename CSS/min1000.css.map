@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAKA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AACE,IADE,CACF,GAAG,CAAC;IACF,MAAM,EAAE,IAAI;GACb;EAHH,AAIE,IAJE,CAIF,MAAM,CAAA;IACJ,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,IAAI;GACZ",
     "sources": [
-        "min1000.scss"
+        "min1000.scss",
+        "_color-theme.scss"
     ],
     "names": [],
     "file": "min1000.css"

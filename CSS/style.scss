@@ -1,16 +1,28 @@
-/* DO NOT LINK API KEY!!!!!!!!!!
+/* 
+REMEMBER
+- if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+-use float to wrap text around images like in word.
+-DO NOT LINK API KEY!!!!!!!!!!
 
-so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+WHERE I WAS WHEN TECHNICAL PROBLEMS CAME ABOUT
+i just tried putting the img in a span and the p and a into a different span but both within the same div and it changed nothing, i could probably cntl z until all of the spans are gone in the main section on contactUs.
+So i came back from eating and my computer had reset and updated, but now all i can see is the video but everything seems to be there and can be interacted with, so the html is there? as in i can click on the phone number and can drag the horizontal scroll sideways, and i clicked around until i clicked on the nav bar and can naviugate through pages, and the iframe map can be seen as well (which makes snese since the iframe for both of them is just a window to another site that isnt broken) and because i can see the iframe i can scroll and the nav bar shadow appears over the iframe. also i can get part of an image and some of the letters for the menu, and can in fact navigate to the menu item pages. 
+Things I have tried:
+-i shut down all of the vscode windows and restarted them and it updated to the new february version
+- \i tried the internet but couldnt find anything relevant
+-i tried to open other folders/files and they havde the same problem
+-i tried turning off the port and sass several times, including in combination with all my other efforts
+- i will try resetting my computer, it worked, but I am keeping this history for now. 
 
--make the grid for menu/contact for 2/tablet and 3/desktop
---fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
-
-If I can
--style nav bar and MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
--make the pictures on the index page be horizontal again (it's just in a list right now)
+NEED TO FINISH
+-VIDEO NEEDS TO HAVE IT'S NATURAL SIZE INPUT INTO CSS
+-THE PHONE NUMBER IS OFF TO THE LEFT ON THE HOME PAGE, AT 25% MARGIN ON THE MENU/CONTACT AND NOT THERE ON MENU ITEMS
+-STYLE THE MENU-ITEMS ABOVE 600<!!!! THE IMAGES ARE TOO SMALL. Just copy the contactUs style, already did it to pizza (then it stopped working)
+-the contactUs page is splitting into 3 columns at about 1055 wide
+-for some reason the phione number disappears on food item pages
+-fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. Also style it a little bit better
 -make the nav bar appear in the top corner on desktop like standard websites have
 
--use float to wrap text around images like in word.
 */
 * {
   margin: 0;
@@ -25,7 +37,7 @@ body {
 }
 
 header {
-  margin-left: 25%;
+  // margin-left: 25%;
   display: inline-block;
   font-size: 3rem;
   a:link {
@@ -62,26 +74,25 @@ main {
   padding: 1rem;
   grid-gap: 1vw;
   /*change up the code below to make it my own. all div.scrollmenu*/
-  // div.scrollmenu {
-  //   background-color: $white-theme;
-  //   overflow: auto;
-  //   white-space: nowrap;
-  // }
+  div.scrollmenu {
+    background-color: $white-theme;
+    overflow: auto;
+    white-space: nowrap;
+  }
   
-  // div.scrollmenu a {
-  //   display: block; /*was inline-block, I think it was for sideways scroll*/
-  //   color: $orange-theme;
-  //   text-align: center;
-  //   padding: 14px;
-  //   text-decoration: none;
-  // }
+  div.scrollmenu a {
+    display: inline-block; /*was inline-block, I think it was for sideways scroll*/
+    color: $orange-theme;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
 
   nav {
     // margin-left: 25%;
-
+    // margin-right: auto;
     font-size: 1.5rem;
     position: fixed;
-    // margin: 20px;
     bottom: 5%;
     background-color: $gray-theme2;
     a:link {

@@ -10,28 +10,28 @@
   /*change the colors or delete all together. just a place holder for now*/
     main {
       .pizza {
-        background: $blue-theme;
+        background: $gray-theme;
       }
       .lasagna {
-        background: $red-theme;
+        background: $gray-theme;
       }
       .spaghetti {
-        background: $blue-theme;
+        background: $gray-theme;
       }
       .wings {
-         background: $red-theme;
+        background: $gray-theme;
       }
       .non-alcoholic {
-        background: $blue-theme;
+        background: $gray-theme;
       }
       .beer {
-         background: $red-theme;
+        background: $gray-theme;
       }
       .wine {
-        background: $blue-theme;
+        background: $gray-theme;
       }
       .desert {
-        background: $red-theme;
+        background: $gray-theme;
       }
       
       #menuItems {
@@ -47,10 +47,37 @@
         text-align: center;
         // padding: 4rem;
         grid-gap: 1vw;
+        a {
+          color: $yellow-theme;
+        }
       }
       img {
-        width: 60%;
+        width: 250px;
         float: left;
       }
     }
+ 
+  @media screen and (min-width:1000px) {
+    main {
+      #menuItems {
+        // margin: 2rem;
+        display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(28vw,1fr));
+        grid-template-columns: repeat(3,1fr);
+      }
+      
+      #menuItems {
+        font-size: 1em;
+        text-align: center;
+        // padding: 4rem;
+        grid-gap: 1vw;
+      }
+
+      img{
+        width: 200px;
+      }
+    }
   }
+}

@@ -2,3 +2,15 @@
   // nav{
   //   top: 5%;
   // }
+  @import 'color-theme';
+@media screen and (min-width:1000px) {
+  main {
+    img {
+      height: 80vh;
+    }
+    iframe{
+      height: 60vh;
+      width: 80vw;
+    }
+  }
+}

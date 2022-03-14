@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=min1000.css.map */
+@media screen and (min-width: 1000px) {
+  main img {
+    height: 80vh;
+  }
+  main iframe {
+    height: 60vh;
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=min1000.css.map */

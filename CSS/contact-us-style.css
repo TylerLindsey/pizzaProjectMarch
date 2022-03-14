@@ -1,16 +1,29 @@
-/* DO NOT LINK API KEY!!!!!!!!!!
+/* 
+REMEMBER
+- if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+-use float to wrap text around images like in word.
+-DO NOT LINK API KEY!!!!!!!!!!
 
-so i if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
+WHERE I WAS WHEN TECHNICAL PROBLEMS CAME ABOUT
+i just tried putting the img in a span and the p and a into a different span but both within the same div and it changed nothing, i could probably cntl z until all of the spans are gone in the main section on contactUs.
+So i came back from eating and my computer had reset and updated, but now all i can see is the video but everything seems to be there and can be interacted with, so the html is there? as in i can click on the phone number and can drag the horizontal scroll sideways, and i clicked around until i clicked on the nav bar and can naviugate through pages, and the iframe map can be seen as well (which makes snese since the iframe for both of them is just a window to another site that isnt broken) and because i can see the iframe i can scroll and the nav bar shadow appears over the iframe. also i can get part of an image and some of the letters for the menu, and can in fact navigate to the menu item pages. 
+Things I have tried:
+-i shut down all of the vscode windows and restarted them and it updated to the new february version
+- \i tried the internet but couldnt find anything relevant
+-i tried to open other folders/files and they havde the same problem
+-i tried turning off the port and sass several times, including in combination with all my other efforts
+- i will try resetting my computer, it worked, but I am keeping this history for now. 
 
--make the grid for menu/contact for 2/tablet and 3/desktop
---fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. 
-
-If I can
--style nav bar and MAKE THE EMAIL US LINK LOOK DIFFERENT THAN THE OTHER PAGE LINKS
--make the pictures on the index page be horizontal again (it's just in a list right now)
+NEED TO FINISH
+-make the grid for contactUs for tablet and desktop
+-STYLE THE MENU-ITEMS ABOVE 600<!!!! THE IMAGES ARE TOO SMALL. Just copy the contactUs style to offset images and descriptions from one side to the other
+-fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. Also style it a little bit better
+-fix images in menu to be a react better, 1 size of vw for under 600 like 80vw (and also have the title on top of the image), then have it as a fixed image size for 600< and write in the comments that I used a fixed size to fit the space better
 -make the nav bar appear in the top corner on desktop like standard websites have
 
--use float to wrap text around images like in word.
+
+if i use lorem ipsum, i can say "my page is so authentic italian that we actually incorporate a latin section"
+could also make a joke about 50 shades of gray on my webpage, "not the kinky book/movie kind though"
 */
 * {
   margin: 0;
@@ -72,11 +85,26 @@ main img {
           align-items: center;
 }
 
+main div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+main div.scrollmenu a {
+  display: inline-block;
+  /*was inline-block, I think it was for sideways scroll*/
+  color: #a07007;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
 main nav {
   font-size: 1.5rem;
   position: fixed;
   bottom: 5%;
-  background-color: #9b9797;
+  background-color: #cfc9c9;
 }
 
 main nav a:link {
@@ -88,7 +116,7 @@ main nav a:active {
 }
 
 main nav a:visited {
-  color: rbg(222, 70, 7);
+  color: #a07007;
   font-weight: bold;
 }
 
@@ -121,6 +149,82 @@ footer img {
 @media screen and (min-width: 600px) {
   main iframe {
     width: 92vw;
+  }
+  main .grid-container {
+    display: -ms-grid;
+    display: grid;
+    font-size: 2rem;
+    /*none of the a tags are properly selected*/
+  }
+  main .grid-container .reception {
+    background-color: #615b5b;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+  }
+  main .grid-container .reception img {
+    float: left;
+  }
+  main .grid-container .reception a + p {
+    float: right;
+  }
+  main .grid-container .GM {
+    background-color: rgba(124, 121, 121, 0.815);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+  }
+  main .grid-container .GM img {
+    float: right;
+  }
+  main .grid-container .GM a + p {
+    float: left;
+  }
+  main .grid-container .BM {
+    background-color: #615b5b;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+  }
+  main .grid-container .BM img {
+    float: left;
+  }
+  main .grid-container .BM a + p {
+    float: right;
+  }
+  main .grid-container .FM {
+    background-color: rgba(124, 121, 121, 0.815);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+  }
+  main .grid-container .FM img {
+    float: right;
+  }
+  main .grid-container .FM a + p {
+    float: left;
+  }
+  main .grid-container .HC {
+    background-color: #615b5b;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+  }
+  main .grid-container .HC img {
+    float: left;
+  }
+  main .grid-container .HC a + p {
+    float: right;
   }
 }
 /*# sourceMappingURL=contact-us-style.css.map */
