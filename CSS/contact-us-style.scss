@@ -1,5 +1,6 @@
 @import 'style.scss';
 @import 'min600';
+/*make the rules below only apply to the contact us page and import generic rules for 600< */
 @media screen and (min-width:600px) {
   main {
     iframe {
@@ -20,7 +21,7 @@
           float: right;
         }
       } 
-/*none of the a tags are properly selected*/
+      
       .GM {
         background-color: $gray-theme4;
         display: grid;

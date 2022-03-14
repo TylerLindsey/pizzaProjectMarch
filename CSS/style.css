@@ -1,45 +1,30 @@
 /* 
-REMEMBER
-- if i have to make the change in the style file then i have to go to the other scss files and hit cntl s for the changes to work. Nothing else will make them work
--use float to wrap text around images like in word.
--DO NOT LINK API KEY!!!!!!!!!!
-
-WHERE I WAS WHEN TECHNICAL PROBLEMS CAME ABOUT
-i just tried putting the img in a span and the p and a into a different span but both within the same div and it changed nothing, i could probably cntl z until all of the spans are gone in the main section on contactUs.
-So i came back from eating and my computer had reset and updated, but now all i can see is the video but everything seems to be there and can be interacted with, so the html is there? as in i can click on the phone number and can drag the horizontal scroll sideways, and i clicked around until i clicked on the nav bar and can naviugate through pages, and the iframe map can be seen as well (which makes snese since the iframe for both of them is just a window to another site that isnt broken) and because i can see the iframe i can scroll and the nav bar shadow appears over the iframe. also i can get part of an image and some of the letters for the menu, and can in fact navigate to the menu item pages. 
-Things I have tried:
--i shut down all of the vscode windows and restarted them and it updated to the new february version
-- \i tried the internet but couldnt find anything relevant
--i tried to open other folders/files and they havde the same problem
--i tried turning off the port and sass several times, including in combination with all my other efforts
-- i will try resetting my computer, it worked, but I am keeping this history for now. 
-
 NEED TO FINISH
 -VIDEO NEEDS TO HAVE IT'S NATURAL SIZE INPUT INTO CSS
--THE PHONE NUMBER IS OFF TO THE LEFT ON THE HOME PAGE, AT 25% MARGIN ON THE MENU/CONTACT AND NOT THERE ON MENU ITEMS
--STYLE THE MENU-ITEMS ABOVE 600<!!!! THE IMAGES ARE TOO SMALL. Just copy the contactUs style, already did it to pizza (then it stopped working)
--the contactUs page is splitting into 3 columns at about 1055 wide
--for some reason the phione number disappears on food item pages
--fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. Also style it a little bit better
--make the nav bar appear in the top corner on desktop like standard websites have
-
 */
 * {
   margin: 0;
   padding: 0;
 }
 
+/*use these for the overall thee of the site. Gray is trending*/
+/*use the oranges for fonts*/
+/*background colour and negative space colour for the header*/
+/*active links in header*/
+/*links on the menu page and in nav bar before being clicked*/
 body {
   background-color: #5c5757;
 }
 
+/*THIS ONLY APPLIES TO THE HEADER AND FOOTER! The main will be bisque (on top) of it (think z-index)*/
 header {
   display: inline-block;
   font-size: 3rem;
+  /*the a tag will disappear above 600*/
 }
 
 header a:link {
-  color: white;
+  color: bisque;
 }
 
 header a:active {
@@ -48,24 +33,23 @@ header a:active {
 
 header img {
   width: 75px;
+  /*for logo*/
 }
 
 header p {
   display: none;
+  /*this is for the phone nuumber that is not clickable, it will change above 600*/
 }
 
 main {
   color: #e69a0f;
-  background-color: white;
+  background-color: bisque;
   font-size: large;
   font: bold;
   text-align: center;
   padding: 1rem;
   grid-gap: 1vw;
-  /*change up the code below to make it my own. all div.scrollmenu*/
-  /*because they are all in the animated id does that mean 
-i think i need to make a class of animation and a class of images and they are the start and end point of he animation.
- perhaps i could put this animated section in it's own page and import it like i will with colours*/
+  /*below in the div.scrollmenu sections is the horizontal scroll info on the index page*/
 }
 
 main .title {
@@ -84,14 +68,13 @@ main img {
 }
 
 main div.scrollmenu {
-  background-color: white;
+  background-color: bisque;
   overflow: auto;
   white-space: nowrap;
 }
 
 main div.scrollmenu a {
   display: inline-block;
-  /*was inline-block, I think it was for sideways scroll*/
   color: #a07007;
   text-align: center;
   padding: 14px;
@@ -106,7 +89,7 @@ main nav {
 }
 
 main nav a:link {
-  color: maroon;
+  color: #da49da;
 }
 
 main nav a:active {
@@ -122,9 +105,4 @@ footer img {
   display: inline-block;
   height: 50px;
 }
-
-/* add that to above 1100*
-  // div.scrollmenu a:hover {
-    background-color: $gray-theme2;
-  } */
 /*# sourceMappingURL=style.css.map */

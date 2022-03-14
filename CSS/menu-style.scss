@@ -7,7 +7,6 @@
 @import 'min600';
 @media screen and (min-width:600px) {
 
-  /*change the colors or delete all together. just a place holder for now*/
     main {
       .pizza {
         background: $gray-theme;
@@ -35,20 +34,17 @@
       }
       
       #menuItems {
-        // margin: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: repeat(auto-fit, minmax(40vw,1fr));
       }
       
       #menuItems {
         font-size: 1em;
         text-align: center;
-        // padding: 4rem;
         grid-gap: 1vw;
         a {
-          color: $yellow-theme;
+          color: $purple-theme;
         }
       }
       img {
@@ -60,18 +56,13 @@
   @media screen and (min-width:1000px) {
     main {
       #menuItems {
-        // margin: 2rem;
         display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
-        // grid-template-columns: repeat(auto-fit, minmax(28vw,1fr));
         grid-template-columns: repeat(3,1fr);
       }
       
       #menuItems {
         font-size: 1em;
         text-align: center;
-        // padding: 4rem;
         grid-gap: 1vw;
       }
 

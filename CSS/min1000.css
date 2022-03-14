@@ -1,6 +1,12 @@
+/*use these for the overall thee of the site. Gray is trending*/
+/*use the oranges for fonts*/
+/*background colour and negative space colour for the header*/
+/*active links in header*/
+/*links on the menu page and in nav bar before being clicked*/
 @media screen and (min-width: 1000px) {
   main img {
     height: 80vh;
+    /*img increases in size again to a bigger fixed image so it won't get distorted*/
   }
   main iframe {
     height: 60vh;

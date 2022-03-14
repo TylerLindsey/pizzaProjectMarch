@@ -1,12 +1,12 @@
 @import 'style.scss';
 @import 'min600';
 @import 'min1000';
-// @import 'style'; delete this? 
+/*below are specific instructions for above 600 on the index page, above r the generic instructions.*/
 @media screen and (min-width:600px) {  
   main {
     img {
       height: 30vh;
-    }
+    } /*increase size fro 20vh under 600*/
   }
 }
 

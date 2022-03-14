@@ -1,12 +1,8 @@
- // I need to get the nav bar to go to the top right side of the screen and stay fixed there
-  // nav{
-  //   top: 5%;
-  // }
-  @import 'color-theme';
+@import 'color-theme';
 @media screen and (min-width:1000px) {
   main {
     img {
-      height: 80vh;
+      height: 80vh; /*img increases in size again to a bigger fixed image so it won't get distorted*/
     }
     iframe{
       height: 60vh;

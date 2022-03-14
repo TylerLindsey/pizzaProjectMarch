@@ -1,10 +1,16 @@
+/*use these for the overall thee of the site. Gray is trending*/
+/*use the oranges for fonts*/
+/*background colour and negative space colour for the header*/
+/*active links in header*/
+/*links on the menu page and in nav bar before being clicked*/
 @media screen and (min-width: 600px) {
+  /*the a link and p do a swith above 600, the a tag for the clickable phone number disappears and the the p becomes visible*/
   header a:link {
     display: none;
   }
   header p {
     display: inline;
-    color: white;
+    color: bisque;
   }
   main img {
     height: 40vh;

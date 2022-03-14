@@ -1,17 +1,6 @@
-// @import 'style'; 
-// @media screen and (min-width:600px) {
-//   main {
-//     img {
-//       height: 60vh;
-//     }
-//     iframe{
-//       height: 60vh;
-//       width: 80vw;
-//     }
-//   }
-// }
 @import 'color-theme';
 @media screen and (min-width:600px) {
+  /*the a link and p do a swith above 600, the a tag for the clickable phone number disappears and the the p becomes visible*/
   header {
     a:link {
       display: none;
