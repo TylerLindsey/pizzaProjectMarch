@@ -6,7 +6,7 @@
 }
 @import 'min600';
 @media screen and (min-width:600px) {
-
+/*Break the menu into 2 columns instead of one and add colour*/
     main {
       .pizza {
         background: $gray-theme;
@@ -52,7 +52,7 @@
         float: left;
       }
     }
- 
+ /*Break the menu into 3 columns instead of 2*/
   @media screen and (min-width:1000px) {
     main {
       #menuItems {

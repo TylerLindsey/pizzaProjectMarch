@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACG0C,gEAAgE;AAEvE,6BAA6B;AAC1C,8DAA8D;AAC9D,0BAA0B;AACd,8DAA8D;ADPhG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AACE,IADE,CACF,GAAG,CAAC;IACF,MAAM,EAAE,IAAI;IAAE,iFAAiF;GAChG;EAHH,AAIE,IAJE,CAIF,MAAM,CAAA;IACJ,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,IAAI;GACZ",
-    "sources": [
-        "min1000.scss",
-        "_color-theme.scss"
-    ],
-    "names": [],
-    "file": "min1000.css"
-}
+{"version":3,"sources":["_color-theme.scss","min1000.scss","min1000.css"],"names":[],"mappings":"AAG0C,+DAAA;AAEP,4BAAA;AACb,6DAAA;AACA,yBAAA;AACY,6DAAA;ACPlC;EAEI;IACE,YAAA,EAAA,gFAAA;ECIJ;EDFE;IACE,YAAA;IACA,WAAA;ECIJ;AACF","file":"min1000.css"}

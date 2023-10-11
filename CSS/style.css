@@ -1,7 +1,3 @@
-/* 
-NEED TO FINISH
--VIDEO NEEDS TO HAVE IT'S NATURAL SIZE INPUT INTO CSS
-*/
 * {
   margin: 0;
   padding: 0;
@@ -13,36 +9,28 @@ NEED TO FINISH
 /*active links in header*/
 /*links on the menu page and in nav bar before being clicked*/
 body {
-  background-color: #5c5757;
-}
-
-/*THIS ONLY APPLIES TO THE HEADER AND FOOTER! The main will be bisque (on top) of it (think z-index)*/
+  background-color: rgb(92, 87, 87);
+} /*THIS ONLY APPLIES TO THE HEADER AND FOOTER! The main will be bisque (on top) of it (think z-index)*/
 header {
   display: inline-block;
   font-size: 3rem;
   /*the a tag will disappear above 600*/
 }
-
 header a:link {
   color: bisque;
 }
-
 header a:active {
   color: hotpink;
 }
-
 header img {
-  width: 75px;
-  /*for logo*/
+  width: 75px; /*for logo*/
 }
-
 header p {
-  display: none;
-  /*this is for the phone nuumber that is not clickable, it will change above 600*/
+  display: none; /*this is for the phone nuumber that is not clickable, it will change above 600*/
 }
 
 main {
-  color: #e69a0f;
+  color: rgb(230, 154, 15);
   background-color: bisque;
   font-size: large;
   font: bold;
@@ -51,58 +39,46 @@ main {
   grid-gap: 1vw;
   /*below in the div.scrollmenu sections is the horizontal scroll info on the index page*/
 }
-
 main .title {
   font: 2em sans-serif;
 }
-
 main .subtitle {
   font: 1.5em sans-serif;
 }
-
 main img {
   height: 20vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main div.scrollmenu {
   background-color: bisque;
   overflow: auto;
   white-space: nowrap;
 }
-
 main div.scrollmenu a {
   display: inline-block;
-  color: #a07007;
+  color: rgb(160, 112, 7);
   text-align: center;
   padding: 14px;
   text-decoration: none;
 }
-
 main nav {
   font-size: 1.5rem;
   position: fixed;
   bottom: 5%;
-  background-color: #cfc9c9;
+  background-color: rgb(207, 201, 201);
 }
-
 main nav a:link {
-  color: #da49da;
+  color: rgb(218, 73, 218);
 }
-
 main nav a:active {
   color: hotpink;
 }
-
 main nav a:visited {
-  color: #a07007;
+  color: rgb(160, 112, 7);
   font-weight: bold;
 }
 
 footer img {
   display: inline-block;
   height: 50px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

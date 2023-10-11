@@ -5,12 +5,10 @@
 /*links on the menu page and in nav bar before being clicked*/
 @media screen and (min-width: 1000px) {
   main img {
-    height: 80vh;
-    /*img increases in size again to a bigger fixed image so it won't get distorted*/
+    height: 80vh; /*img increases in size again to a bigger fixed image so it won't get distorted*/
   }
   main iframe {
     height: 60vh;
     width: 80vw;
   }
-}
-/*# sourceMappingURL=min1000.css.map */
+}/*# sourceMappingURL=min1000.css.map */

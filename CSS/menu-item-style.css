@@ -1,16 +1,3 @@
-/* 
-
-NEED TO FINISH
--go though and add explanations for codes
--VIDEO NEEDS TO HAVE IT'S NATURAL SIZE INPUT INTO CSS
--THE PHONE NUMBER IS OFF TO THE LEFT ON THE HOME PAGE, AT 25% MARGIN ON THE MENU/CONTACT AND NOT THERE ON MENU ITEMS
--STYLE THE MENU-ITEMS ABOVE 600<!!!! THE IMAGES ARE TOO SMALL. Just copy the contactUs style, already did it to pizza (then it stopped working)
--the contactUs page is splitting into 3 columns at about 1055 wide
--for some reason the phione number disappears on food item pages
--fix the nav bar and phone number to be centered, not margin 25%, it just sort of works for now but needs to be fixed. Review positioning w4a to fix the problems with the nav bar and phone number at the top of the screen. Also style it a little bit better
--make the nav bar appear in the top corner on desktop like standard websites have
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -22,91 +9,72 @@ NEED TO FINISH
 /*active links in header*/
 /*links on the menu page and in nav bar before being clicked*/
 body {
-  background-color: #5c5757;
-}
-
+  background-color: rgb(92, 87, 87);
+} /*THIS ONLY APPLIES TO THE HEADER AND FOOTER! The main will be bisque (on top) of it (think z-index)*/
 header {
   display: inline-block;
   font-size: 3rem;
+  /*the a tag will disappear above 600*/
 }
-
 header a:link {
   color: bisque;
 }
-
 header a:active {
   color: hotpink;
 }
-
 header img {
-  width: 75px;
+  width: 75px; /*for logo*/
 }
-
 header p {
-  display: none;
+  display: none; /*this is for the phone nuumber that is not clickable, it will change above 600*/
 }
 
 main {
-  color: #e69a0f;
+  color: rgb(230, 154, 15);
   background-color: bisque;
   font-size: large;
   font: bold;
   text-align: center;
   padding: 1rem;
   grid-gap: 1vw;
-  /*change up the code below to make it my own. all div.scrollmenu*/
-  /*because they are all in the animated id does that mean 
-i think i need to make a class of animation and a class of images and they are the start and end point of he animation.
- perhaps i could put this animated section in it's own page and import it like i will with colours*/
+  /*below in the div.scrollmenu sections is the horizontal scroll info on the index page*/
 }
-
 main .title {
   font: 2em sans-serif;
 }
-
 main .subtitle {
   font: 1.5em sans-serif;
 }
-
 main img {
   height: 20vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main div.scrollmenu {
   background-color: bisque;
   overflow: auto;
   white-space: nowrap;
 }
-
 main div.scrollmenu a {
   display: inline-block;
-  /*was inline-block, I think it was for sideways scroll*/
-  color: #a07007;
+  color: rgb(160, 112, 7);
   text-align: center;
   padding: 14px;
   text-decoration: none;
 }
-
 main nav {
   font-size: 1.5rem;
   position: fixed;
   bottom: 5%;
-  background-color: #cfc9c9;
+  background-color: rgb(207, 201, 201);
 }
-
 main nav a:link {
-  color: #da49da;
+  color: rgb(218, 73, 218);
 }
-
 main nav a:active {
   color: hotpink;
 }
-
 main nav a:visited {
-  color: #a07007;
+  color: rgb(160, 112, 7);
   font-weight: bold;
 }
 
@@ -115,15 +83,9 @@ footer img {
   height: 50px;
 }
 
-/* add that to above 1100*
-  // div.scrollmenu a:hover {
-    background-color: $gray-theme2;
-  } */
 #menuItems {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 /*use these for the overall thee of the site. Gray is trending*/
@@ -132,6 +94,7 @@ footer img {
 /*active links in header*/
 /*links on the menu page and in nav bar before being clicked*/
 @media screen and (min-width: 600px) {
+  /*the a link and p do a swith above 600, the a tag for the clickable phone number disappears and the the p becomes visible*/
   header a:link {
     display: none;
   }
@@ -147,19 +110,14 @@ footer img {
     width: 80vw;
   }
 }
-
 @media screen and (min-width: 600px) {
   main .menuItems {
     height: 45vh;
     margin: 2rem;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fll];
-        grid-template-columns: repeat(auto-fll, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fll, minmax(250px, 1fr));
   }
   main .menuItems {
     font-size: 5rem;
@@ -171,16 +129,13 @@ footer img {
     width: 350px;
   }
   main .grid-container {
-    display: -ms-grid;
     display: grid;
     font-size: 2rem;
   }
   main .grid-container .reception {
-    background-color: #615b5b;
-    display: -ms-grid;
+    background-color: rgb(97, 91, 91);
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .reception img {
@@ -191,10 +146,8 @@ footer img {
   }
   main .grid-container .hawaiian-pizza {
     background-color: rgba(124, 121, 121, 0.815);
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .hawaiian-pizza img {
@@ -204,11 +157,9 @@ footer img {
     float: left;
   }
   main .grid-container .Pepperoni-pizza {
-    background-color: #615b5b;
-    display: -ms-grid;
+    background-color: rgb(97, 91, 91);
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .Pepperoni-pizza img {
@@ -219,10 +170,8 @@ footer img {
   }
   main .grid-container .cheese-pizza {
     background-color: rgba(124, 121, 121, 0.815);
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .cheese-pizza img {
@@ -232,11 +181,9 @@ footer img {
     float: left;
   }
   main .grid-container .greek-pizza {
-    background-color: #615b5b;
-    display: -ms-grid;
+    background-color: rgb(97, 91, 91);
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .greek-pizza img {
@@ -247,10 +194,8 @@ footer img {
   }
   main .grid-container .ham-and-mushroom-pizza {
     background-color: rgba(124, 121, 121, 0.815);
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .ham-and-mushroom-pizza img {
@@ -260,11 +205,9 @@ footer img {
     float: right;
   }
   main .grid-container .bbq-pulled-pork-pizza {
-    background-color: #615b5b;
-    display: -ms-grid;
+    background-color: rgb(97, 91, 91);
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .bbq-pulled-pork-pizza img {
@@ -275,10 +218,8 @@ footer img {
   }
   main .grid-container .california-pizza {
     background-color: rgba(124, 121, 121, 0.815);
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .california-pizza img {
@@ -288,11 +229,9 @@ footer img {
     float: right;
   }
   main .grid-container .chicago-deep-dish-pizza {
-    background-color: #615b5b;
-    display: -ms-grid;
+    background-color: rgb(97, 91, 91);
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(70px, auto);
   }
   main .grid-container .chicago-deep-dish-pizza img {
@@ -302,10 +241,8 @@ footer img {
     float: right;
   }
 }
-
 @media screen and (min-width: 1000px) {
   main img {
     width: 500px;
   }
-}
-/*# sourceMappingURL=menu-item-style.css.map */
+}/*# sourceMappingURL=menu-item-style.css.map */
